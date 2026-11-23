@@ -14,7 +14,7 @@ public class EstudoHasMasp {
             System.out.println(nome + " - " + nota);
 
         }
-        System.out.println("-------------------");
+        System.out.println("----------------------------");
 
         for (Map.Entry<String, Double> nota : notasAlunos.entrySet()) {
             String nome = nota.getKey();
@@ -22,19 +22,29 @@ public class EstudoHasMasp {
             System.out.println(nome + " - " + valorNota);
         }
 
+        System.out.println("----------------------------");
         double nota = notasAlunos.get("Doni");
         System.out.println("A nota do Doni é " + nota);
 
-        int tamanhoHash = notasAlunos.size();
+        System.out.println("----------------------------");
 
+        int tamanhoHash = notasAlunos.size();
+        System.out.println("Tamanho Hash: " + tamanhoHash);
+
+        System.out.println("----------------------------");
 
         notasAlunos.remove("Doni");
 
+        System.out.println("Removido o Doni");
+
+        for (String nome : notasAlunos.keySet()) {
+            double nota1 = notasAlunos.get(nome);
+            System.out.println(nome + " - " + nota1);
+
+        }
+
     }
-
-
 }
-
 
 
 
